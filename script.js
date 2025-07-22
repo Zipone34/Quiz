@@ -103,307 +103,309 @@ function submitQuiz() {
     quizForm.style.display = "none";
 }
 
+
 const questions = [
     {
-        q: "1. A project manager's role is typically visible from which phase of the project lifecycle?",
+        q: "1. What is the unique responsibility of the project manager that cannot be delegated?",
         options: {
-            a: "Planning.",
-            b: "Initiation through closing.",
-            c: "Execution only.",
-            d: "Monitoring and controlling."
-        },
-        a: "b"
-    },
-    {
-        q: "2. What is a primary responsibility of the project manager?",
-        options: {
-            a: "Handling daily operational tasks.",
-            b: "Performing all project work themselves.",
-            c: "Setting organizational strategic objectives.",
-            d: "Leading the project team and coordinating efforts."
-        },
-        a: "d"
-    },
-    {
-        q: "3. The project manager's influence extends across what primary domains?",
-        options: {
-            a: "Project, organization, and industry.",
-            b: "Personal life, work, and hobbies.",
-            c: "Financial, legal, and marketing.",
-            d: "Past, present, and future projects."
-        },
-        a: "a"
-    },
-    {
-        q: "4. Which of the following is considered part of the project manager's sphere of influence within the project?",
-        options: {
-            a: "Negotiating new business contracts.",
-            b: "Managing external market changes.",
-            c: "Balancing competing project constraints.",
-            d: "Developing new company policies."
+            a: "Resource allocation.",
+            b: "Risk identification.",
+            c: "Project integration management.",
+            d: "Quality assurance."
         },
         a: "c"
     },
     {
-        q: "5. When a project manager interacts with senior leaders to align project objectives with strategic goals, they are influencing which domain?",
+        q: "2. A project's cost estimate for a contingency plan integrates processes from which Project Management Knowledge Areas?",
         options: {
-            a: "The project itself.",
-            b: "The organization.",
-            c: "The professional discipline.",
-            d: "Across other disciplines."
+            a: "Scope, Communication, and Quality.",
+            b: "Cost, Schedule, and Risk.",
+            c: "Procurement, Stakeholder, and Resources.",
+            d: "Time, Scope, and Integration."
         },
         a: "b"
     },
     {
-        q: "6. Understanding current product development and market niches falls under the project manager's influence on which domain?",
+        q: "3. The links among project management processes are often described as being:",
         options: {
-            a: "The industry.",
-            b: "The organization.",
-            c: "The project team.",
-            d: "Professional discipline."
-        },
-        a: "a"
-    },
-    {
-        q: "7. The PMI Talent Triangle® emphasizes what three key skill areas for project managers?",
-        options: {
-            a: "Technical, financial, and legal.",
-            b: "Leadership, communication, and negotiation.",
-            c: "Technical project management, strategic and business management, and leadership.",
-            d: "Planning, executing, and closing."
+            a: "Strictly sequential.",
+            b: "Always one-way.",
+            c: "Highly iterative.",
+            d: "Rarely connected."
         },
         a: "c"
     },
     {
-        q: "8. Which skill set involves the knowledge of project management processes, tools, and techniques?",
+        q: "4. Which process formally authorizes the existence of a project and grants the project manager authority?",
         options: {
-            a: "Business acumen.",
-            b: "Strategic management.",
-            c: "Interpersonal skills.",
-            d: "Technical project management skills."
-        },
-        a: "d"
-    },
-    {
-        q: "9. What type of skills enable a project manager to understand the organization's strategy and how projects contribute to it?",
-        options: {
-            a: "Leadership skills.",
-            b: "Technical skills.",
-            c: "Strategic and business management skills.",
-            d: "Personal communication skills."
+            a: "Develop Project Management Plan.",
+            b: "Direct and Manage Project Work.",
+            c: "Develop Project Charter.",
+            d: "Close Project or Phase."
         },
         a: "c"
     },
     {
-        q: "10. A project manager who inspires the team, fosters collaboration, and resolves conflicts is demonstrating strong:",
+        q: "5. The Project Charter serves to link the project to what?",
         options: {
-            a: "Technical project management skills.",
-            b: "Strategic and business management skills.",
-            c: "Leadership skills.",
-            d: "Administrative skills."
+            a: "Individual team member goals.",
+            b: "Vendor contracts.",
+            c: "Strategic objectives of the organization.",
+            d: "Daily operational tasks."
         },
         a: "c"
     },
     {
-        q: "11. How does leadership primarily differ from management in the context of project management?",
+        q: "6. Which document is explicitly stated as not being a contract?",
         options: {
-            a: "Leadership focuses on relationships and vision, while management focuses on processes and tasks.",
-            b: "Leadership is about control, management is about inspiring.",
-            c: "They are identical concepts with no differences.",
-            d: "Management is for senior roles, leadership is for junior roles."
-        },
-        a: "a"
-    },
-    {
-        q: "12. A project manager who is optimistic, positive, and collaborative exhibits traits of a good:",
-        options: {
-            a: "Administrator.",
-            b: "Leader.",
-            c: "Technical expert.",
-            d: "Financial analyst."
+            a: "The Project Management Plan.",
+            b: "The Project Charter.",
+            c: "The Scope Statement.",
+            d: "The Requirements Documentation."
         },
         a: "b"
     },
     {
-        q: "13. Which of the following is a key aspect of a project manager's integration role at the process level?",
+        q: "7. What is the primary benefit of the Direct and Manage Project Work process?",
         options: {
-            a: "Guiding the team to integrate various project management processes.",
-            b: "Developing personal hobbies.",
-            c: "Conducting external market research.",
-            d: "Managing daily operational duties."
+            a: "Defining project scope.",
+            b: "Providing overall management of project work.",
+            c: "Identifying project risks.",
+            d: "Closing project contracts."
+        },
+        a: "b"
+    },
+    {
+        q: "8. Collecting and communicating work performance data to controlling processes for analysis is an output of which process?",
+        options: {
+            a: "Monitor and Control Project Work.",
+            b: "Direct and Manage Project Work.",
+            c: "Develop Project Management Plan.",
+            d: "Close Project or Phase."
         },
         a: "a"
     },
     {
-        q: "14. What does 'integration at the cognitive level' refer to for a project manager?",
+        q: "9. What is the main purpose of the Manage Project Knowledge process?",
         options: {
-            a: "Combining different project management software.",
-            b: "Integrating new team members into the project.",
-            c: "Merging different organizational departments.",
-            d: "The ability to understand and combine different pieces of information."
-        },
-        a: "d"
-    },
-    {
-        q: "15. When a project manager aligns project objectives with the organization's strategic objectives, they are performing integration at what level?",
-        options: {
-            a: "Process level.",
-            b: "Cognitive level.",
-            c: "Context level.",
-            d: "Personal level."
+            a: "To limit information sharing.",
+            b: "To strictly adhere to old practices.",
+            c: "To leverage existing and create new knowledge for organizational learning.",
+            d: "To prevent any new knowledge from being created."
         },
         a: "c"
     },
     {
-        q: "16. What does 'performing integration' primarily mean for a project manager?",
+        q: "10. Which type of knowledge is personal and difficult to express or codify?",
         options: {
-            a: "Separating all project components.",
-            b: "Combining project processes, knowledge, and people effectively.",
-            c: "Automating all project tasks.",
-            d: "Delegating all responsibilities to the team."
-        },
-        a: "b"
-    },
-    {
-        q: "17. Effective project managers often develop extensive formal and informal networks to:",
-        options: {
-            a: "Solve problems and navigate organizational structures.",
-            b: "Avoid communication.",
-            c: "Limit team interactions.",
-            d: "Increase project complexity."
-        },
-        a: "a"
-    },
-    {
-        q: "18. What kind of skills help a project manager manage conflict and build consensus among stakeholders?",
-        options: {
-            a: "Technical coding skills.",
-            b: "Interpersonal and communication skills.",
-            c: "Financial auditing skills.",
-            d: "Data entry skills."
-        },
-        a: "b"
-    },
-    {
-        q: "19. A project manager's involvement in 'pre-initiation activities' might include:",
-        options: {
-            a: "Writing the final project report.",
-            b: "Decommissioning project resources.",
-            c: "Conducting post-project audits.",
-            d: "Consulting with leaders on strategic objectives."
-        },
-        a: "d"
-    },
-    {
-        q: "20. What is a crucial aspect of a project manager's role in managing stakeholder expectations?",
-        options: {
-            a: "Balancing competing demands.",
-            b: "Ignoring their concerns.",
-            c: "Always agreeing to all requests.",
-            d: "Limiting communication."
-        },
-        a: "a"
-    },
-    {
-        q: "21. The ability of a project manager to effectively influence stakeholders is often based on their:",
-        options: {
-            a: "Formal authority alone.",
-            b: "Personal and professional networks.",
-            c: "Technical expertise only.",
-            d: "Number of certifications."
-        },
-        a: "b"
-    },
-    {
-        q: "22. What is a core characteristic of a project manager's communication approach?",
-        options: {
-            a: "Relying solely on formal written documents.",
-            b: "Using only verbal communication in meetings.",
-            c: "Avoiding any communication with external parties.",
-            d: "Employing both written and real-time communication."
-        },
-        a: "d"
-    },
-    {
-        q: "23. Which aspect of a project manager's role includes managing relationships and building trust?",
-        options: {
-            a: "Technical expertise.",
-            b: "Leadership.",
-            c: "Administrative tasks.",
-            d: "Financial oversight."
-        },
-        a: "b"
-    },
-    {
-        q: "24. What contributes to a project manager's political acumen?",
-        options: {
-            a: "Ignoring organizational dynamics.",
-            b: "Strictly adhering to formal rules only.",
-            c: "Avoiding all forms of negotiation.",
-            d: "Understanding power structures and influence within an organization."
-        },
-        a: "d"
-    },
-    {
-        q: "25. The project manager's responsibilities for a project's business benefits realization might involve:",
-        options: {
-            a: "Ending the project immediately after launch.",
-            b: "Delegating all benefit realization to operations.",
-            c: "Only focusing on project costs.",
-            d: "Follow-on activities after project closeout."
-        },
-        a: "d"
-    },
-    {
-        q: "26. What does a project manager do to ensure project objectives are met?",
-        options: {
-            a: "Guides the project team.",
-            b: "Avoids decision-making.",
-            c: "Focuses solely on budget.",
-            d: "Ignores team input."
-        },
-        a: "a"
-    },
-    {
-        q: "27. The project manager's influence on the 'Professional Discipline' relates to:",
-        options: {
-            a: "Developing new industry standards.",
-            b: "Managing governmental regulations.",
-            c: "Setting international trade policies.",
-            d: "Contributing to knowledge transfer and integration within the profession."
-        },
-        a: "d"
-    },
-    {
-        q: "28. The continuous application of persuasion, negotiation, compromise, and conflict resolution is critical for a project manager exhibiting:",
-        options: {
-            a: "Technical prowess.",
-            b: "Business acumen.",
-            c: "Leadership qualities.",
-            d: "Administrative efficiency."
+            a: "Explicit knowledge.",
+            b: "Implicit knowledge.",
+            c: "Tacit knowledge.",
+            d: "Procedural knowledge."
         },
         a: "c"
     },
     {
-        q: "29. A project manager should be aware of factors like economic forces and process improvement strategies in their:",
+        q: "11. What is the key output of the Manage Project Knowledge process that is created early and updated throughout the project?",
         options: {
-            a: "Sphere of influence - The Organization.",
-            b: "Sphere of influence - Professional Discipline.",
-            c: "Sphere of influence - The Project.",
-            d: "Sphere of influence - The Industry."
+            a: "Project Charter.",
+            b: "Lessons Learned Register.",
+            c: "Risk Report.",
+            d: "Stakeholder Register."
+        },
+        a: "b"
+    },
+    {
+        q: "12. The Monitor and Control Project Work process primarily focuses on what activity?",
+        options: {
+            a: "Initiating new projects.",
+            b: "Tracking, reviewing, and reporting overall progress.",
+            c: "Recruiting new team members.",
+            d: "Finalizing project deliverables."
+        },
+        a: "b"
+    },
+    {
+        q: "13. This process involves comparing actual project performance to the planned performance:",
+        options: {
+            a: "Develop Project Charter.",
+            b: "Direct and Manage Project Work.",
+            c: "Monitor and Control Project Work.",
+            d: "Perform Integrated Change Control."
+        },
+        a: "c"
+    },
+    {
+        q: "14. What is the primary purpose of the Perform Integrated Change Control process?",
+        options: {
+            a: "To avoid all project changes.",
+            b: "To quickly implement every change request.",
+            c: "To review, approve or reject, and manage changes to baselines.",
+            d: "To solely document changes without approval."
+        },
+        a: "c"
+    },
+    {
+        q: "15. What are the two main types of management supported by change control tools?",
+        options: {
+            a: "Risk and Quality Management.",
+            b: "Configuration and Change Management.",
+            c: "Scope and Schedule Management.",
+            d: "Cost and Resource Management."
+        },
+        a: "b"
+    },
+    {
+        q: "16. What group is typically responsible for reviewing and deciding on change requests?",
+        options: {
+            a: "The project team alone.",
+            b: "The Project Sponsor.",
+            c: "The Change Control Board (CCB).",
+            d: "External stakeholders only."
+        },
+        a: "c"
+    },
+    {
+        q: "17. Which process formally completes the project, phase, or contract?",
+        options: {
+            a: "Direct and Manage Project Work.",
+            b: "Monitor and Control Project Work.",
+            c: "Perform Integrated Change Control.",
+            d: "Close Project or Phase."
         },
         a: "d"
     },
     {
-        q: "30. What is a two-fold role for the project manager involving working with the sponsor and guiding the team?",
+        q: "18. The use of Project Management Information Systems (PMIS) is a trend in integration management that helps manage:",
         options: {
-            a: "Risk identification.",
-            b: "Scope definition.",
-            c: "Performing integration.",
-            d: "Quality control."
+            a: "Team morale.",
+            b: "The volume of project data.",
+            c: "Individual skill sets.",
+            d: "External economic factors."
+        },
+        a: "b"
+    },
+    {
+        q: "19. Which trend in integration management involves more rigorous processes due to a mobile workforce?",
+        options: {
+            a: "Use of visual management tools.",
+            b: "Hybrid methodologies.",
+            c: "Project knowledge management.",
+            d: "Expanded project manager responsibilities."
         },
         a: "c"
+    },
+    {
+        q: "20. When project managers are involved in business case development and benefits management, this reflects which trend?",
+        options: {
+            a: "Less stakeholder engagement.",
+            b: "Automation of all tasks.",
+            c: "Expanding project manager responsibilities.",
+            d: "Reducing project complexity."
+        },
+        a: "c"
+    },
+    {
+        q: "21. What approach involves delegating control of detailed product planning and delivery to the project team?",
+        options: {
+            a: "Predictive methodologies.",
+            b: "Waterfall approach.",
+            c: "Adaptive (agile/iterative) environments.",
+            d: "Traditional project management."
+        },
+        a: "c"
+    },
+    {
+        q: "22. What is a key tailoring consideration regarding the project life cycle?",
+        options: {
+            a: "The project's physical location.",
+            b: "The appropriate phases for the project.",
+            c: "The project manager's personal preference.",
+            d: "The size of the project team."
+        },
+        a: "b"
+    },
+    {
+        q: "23. When tailoring, determining whether a predictive, adaptive, or hybrid approach is best for the product or service refers to the:",
+        options: {
+            a: "Management approaches.",
+            b: "Development life cycle.",
+            c: "Knowledge management strategy.",
+            d: "Governance framework."
+        },
+        a: "b"
+    },
+    {
+        q: "24. A project manager's ability to build a collaborative decision-making environment is especially important in:",
+        options: {
+            a: "Functional organizations.",
+            b: "Very large, complex projects.",
+            c: "Adaptive environments.",
+            d: "Projects with minimal changes."
+        },
+        a: "c"
+    },
+    {
+        q: "25. The project manager's responsibility for project integration management cannot be:",
+        options: {
+            a: "Documented.",
+            b: "Accounted for.",
+            c: "Delegated or transferred.",
+            d: "Understood."
+        },
+        a: "c"
+    },
+    {
+        q: "26. An input to the Develop Project Charter process that provides project objectives and contributions to business goals is the:",
+        options: {
+            a: "Work Breakdown Structure.",
+            b: "Benefits Management Plan.",
+            c: "Stakeholder Register.",
+            d: "Risk Management Plan."
+        },
+        a: "b"
+    },
+    {
+        q: "27. Corrective actions, preventive actions, and defect repairs are outputs or results of which process?",
+        options: {
+            a: "Monitor and Control Project Work.",
+            b: "Perform Integrated Change Control.",
+            c: "Direct and Manage Project Work.",
+            d: "Close Project or Phase."
+        },
+        a: "c"
+    },
+    {
+        q: "28. This process includes activities like comparing actual project performance against the plan and assessing performance periodically:",
+        options: {
+            a: "Direct and Manage Project Work.",
+            b: "Close Project or Phase.",
+            c: "Monitor and Control Project Work.",
+            d: "Develop Project Charter."
+        },
+        a: "c"
+    },
+    {
+        q: "29. What type of data analysis involves comparing different courses of action to achieve a specific outcome?",
+        options: {
+            a: "Regression analysis.",
+            b: "Variance analysis.",
+            c: "Alternatives analysis.",
+            d: "Earned value analysis."
+        },
+        a: "c"
+    },
+    {
+        q: "30. In agile environments, the project manager focuses on what concerning the team?",
+        options: {
+            a: "Micro-managing their daily tasks.",
+            b: "Ensuring the team can respond to changes.",
+            c: "Dictating all project decisions.",
+            d: "Limiting team interaction."
+        },
+        a: "b"
     }
+
 ];
 
 
