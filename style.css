@@ -108,3 +108,9 @@ button {
         left: 35%;
     }
 }
+.Created {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
